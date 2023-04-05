@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="normalize.css"/>
+        <link rel="stylesheet" href="form.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&display=swap" rel="stylesheet">
+        <title>oFig-form</title>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header-title">oFig</h1>
+            <strong class="header-title-2">Figurines et statuettes</strong> 
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#" target="_blank">Figurines</a></li>
+                <li><a href="#" target="_blank">Goodies</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+        <p class="header-subtitle">Votre panier <span class="header-subtitle-2">2 articles</span>
+        </p>
+        <main class="main-container">
+            <div class="container-table">
+                <table class="panier-table">
+                    <tbody>
+                        <tr>
+                            <th>Figurine</th>
+                            <th>Prix unitaire</th>
+                            <th>Quantité</th>
+                        </tr>
+                        <tr>
+                            <td> Cloud Strife</td>
+                            <td>59 €</td>
+                            <td> <input class="panier-table-input" type="number" id="quantité-1" name="quantité" value="1">
+                                <span class="panier-table-supprimer">supprimer</span></td>
+                        </tr>
+                        <tr>
+                            <td> Tifa Lockhart</td>
+                            <td>69 €</td>
+                            <td><input class="panier-table-input" type="number" id="quantité-2" name="quantité" value="1">
+                                <span class="panier-table-supprimer">supprimer</span></td>
+                        </tr>
+                        <tr>
+                            <td> Barret Wallace</td>
+                            <td>69 €</td>
+                            <td><input class="panier-table-input" type="number" id="quantité-3" name="quantité" value="1">
+                                <span class="panier-table-supprimer">supprimer</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><span class="panier-table-total">Total de la commande : </span> </td>
+                            <td><span class="reglement-prix">197€</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr/>
+            <div>
+               <h2>Préférences de livraison</h2>
+                    <form class="form" id="myForm">
+                        <div class="bloc-gauche">
+                            <fieldset class="grid-item-left">
+                                <legend>Où souhaitez-vous être livré?</legend>
+                                    <div class="choix-livraison">
+                                        <div>
+                                            <input type="radio" id="adresse" name="choix-livraison">
+                                            <label for="adresse"> Mon adresse courante </label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" id="autre-adresse" name="choix-livraison">
+                                            <label for="id-autre-adresse"> Autre adresse </label>
+                                        </div>
+                                    </div>
+                            </fieldset>
+                            <fieldset class="grid-item-left">
+                                <legend>Options</legend>
+                                    <div class="option-livraison">
+                                        <div>
+                                            <input type="checkbox" id="sms" name="sms">
+                                            <label for="sms"> Suivi de livraison par sms (inclus) </label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="satisfaction" name="satisfaction">
+                                            <label for="satisfaction"> Satisfait ou remboursé (+ 2 euros)</label>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" id="warranty" name="warranty">
+                                            <label for="warranty"> Garantie 2 ans (+ 10 euros)</label>
+                                        </div>
+                                    </div>
+                            </fieldset>  
+                        </div>
+                        <div class="bloc-gauche">   
+                            <fieldset>  
+                                <legend>Adresse</legend>    
+                                    <div class="section-adresse">
+                                        <div class="adresse">
+                                            <label for="rue">Rue</label>
+                                            <input type="text" id="rue" name="rue">
+                                            <br/>
+                                            <label for="code-postal">Code Postal</label>
+                                            <input type="text" id="code-postal" name="ode-postal">
+                                            <br/>
+                                            <label for="ville">Ville</label>
+                                            <input type="text" id="ville" name="ville">
+                                        </div>
+                                    </div>
+                            </fieldset> 
+                            <fieldset>
+                                <legend>Informations complémentaires</legend>
+                                    <div class="section-more-info">
+                                        <label for="info-complementaires">interphone, batiment, etc</label>
+                                        <textarea id="info-complementaires" name="info-complementaires">
+                                        </textarea>
+                                    </div>
+                            </fieldset>
+                        </div>
+                    </form>
+            </div>
+            <hr/>
+            <section class="reglement">
+                <p class="reglement-montant">Montant total à régler : </p>
+                <p class="reglement-prix">197 €</p>
+            </section>
+            <hr/>
+            <section class="continuer-achat">
+                <button class="continuer-achat-continuer" form="myForm"><a href="#">Continuer vos achats</a></button>
+                <button class="continuer-achat-valider" form="myForm"><a href="#">Valider et payer</a></button>
+            </section>
+        </main>
+        <footer>
+            <div>oFig - toutes les images sont sous copyright SquareEnix</div>
+        </footer>
+    </body>
+</html>
