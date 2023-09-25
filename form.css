@@ -41,8 +41,9 @@ nav ul {
 }
 
 ul li {
+    margin-right: 2rem;
     border: solid 1px #ffffff;
-    border-radius: 5px; 
+    border-radius: 5px;
     padding: 5px;
     transition: 1s ease-in-out;
 }
@@ -62,6 +63,11 @@ ul li >a {
     align-self: center;
     padding-left: 20px;
  }
+
+.header-text {
+    color: #ffffff;
+    text-decoration: none;
+}
 
 .header-subtitle{
     grid-column-start: span 2;
@@ -185,7 +191,7 @@ textarea {
     color: #c80000;
     font-size: 1.3em;
     justify-self: end;
-    
+
 }
 
 .continuer-achat {
@@ -195,7 +201,7 @@ textarea {
     margin-top: 20px;
     font-weight: 700;
     margin-bottom: 20px;
-   
+
 }
 
 .continuer-achat-continuer {
@@ -221,7 +227,7 @@ textarea {
     border-radius: 7px;
     font-weight: 700;
     width: 150px;
-    height: 50px;   
+    height: 50px;
 }
 
 .continuer-achat-valider>a {

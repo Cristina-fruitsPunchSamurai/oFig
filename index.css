@@ -23,6 +23,11 @@ body {
     }
 }
 
+.header-text{
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .header__navbar {
     justify-self: center;
 }
@@ -30,6 +35,10 @@ body {
 nav ul {
     display: flex;
     list-style: none;
+}
+
+nav ul li{
+    margin-right: 2rem;
 }
 
 @media all and (max-width: 1024px) {
@@ -41,7 +50,7 @@ nav ul {
 
 ul li {
     border: solid 1px #ffffff;
-    border-radius: 5px; 
+    border-radius: 5px;
     padding: 5px;
     transition: 1s ease-in-out;
 }
@@ -182,7 +191,7 @@ main {
     font-weight: bold;
     color: #ccc;
     text-transform: uppercase;
-} 
+}
 
 hr {
     border: 0.8px solid #ccc;
@@ -211,7 +220,6 @@ hr {
     align-items: center;
     background-color: #c80000;
     color: #FFFFFF;
-    padding: 2px;
     font-size: 0.9em;
     border-style: none;
     border-radius: 7px;
@@ -231,13 +239,8 @@ hr {
     gap: 7px;
 }
 
-/* mettre plutot la balise <del> pour barrer le prix, pour etre plus SEO friendly au lieu de line through */
-/* .promo {
-    text-decoration: line-through;
-    
-} 
- */
- 
+
+
 footer {
     background-color:#666;
     color: #ffffff;
