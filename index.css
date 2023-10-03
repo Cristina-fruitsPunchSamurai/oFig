@@ -63,7 +63,7 @@ ul li {
 
 @media all and (max-width: 1024px) {
     ul li {
-        font-size: 2.5em;
+        font-size: 3em;
     }
 }
 
@@ -95,7 +95,7 @@ strong {
 @media all and (max-width: 1024px) {
     .header-subtitle {
         padding: 25px;
-        font-size: 1.5em;
+        font-size: 2em;
         }
 }
 
@@ -124,9 +124,9 @@ strong {
 
 @media all and (max-width: 1024px) {
     .vignette-soldes-bouton {
-        width: 50px;
-        height: 200px;
-        font-size: 1.5em;
+        width: 60px;
+        height: 270px;
+        font-size: 2.3em;
         padding-right: 10px;
         top: 400px;
     }
